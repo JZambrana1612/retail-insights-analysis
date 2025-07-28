@@ -1,8 +1,8 @@
 # Retail Sales Insights
 
-### Uncovering customer trends, product performance, and seasonal patterns using Python and data visualisation
+### Uncovering customer trends, product performance, and revenue drivers using SQL and Tableau
 
-This project analyses a sample retail sales dataset to answer key business questions about who buys what, when they buy it and how to prioritise inventory. Rather than treating the GitHub repository as the data source, this updated README references the original dataset provider. The sample retail data is hosted by **Gigasheet**, a spreadsheet‑like platform that offers open datasets for practice. Their page notes that the retail sales dataset contains **1,000 rows and 10 columns**, including transaction IDs, dates, customer information, product category, quantity and price. These fields allow analysts to explore sales trends, customer behaviour and total revenue without requiring database access.
+This project analyzes transactional retail data to identify which products sell best, how customer segments behave, and what store-level actions can drive more revenue. The dashboard and recommendations support multiple departments — from marketing and finance to inventory and operations.
 
 ---
 
@@ -10,27 +10,27 @@ This project analyses a sample retail sales dataset to answer key business quest
 
 This analysis answers three high‑impact questions that matter to retail decision‑makers:
 
-1. **Which customer segments contribute most to revenue?** By analysing revenue and basket size by gender, we identify the customer groups that drive sales.
+1. **Which customer segments contribute most to revenue?** By analyzing revenue and basket size by gender, we identify the customer groups that drive sales.
 2. **How does purchase timing affect revenue?** Aggregating sales by month reveals seasonal peaks and troughs; these patterns guide inventory planning and marketing calendars.
-3. **Which products should be prioritised?** Ranking product categories by total and average revenue highlights where merchandising and promotional budgets should be focused.
+3. **Which products should be prioritized?** Ranking product categories by total and average revenue highlights where merchandising and promotional budgets should be focused.
 
 ### Dashboard Overview
 
 The planned dashboard (to be built after finalising the analysis) will include:
 
-- **Segment‑based revenue breakdown:** charts summarising revenue and average basket size by gender.
+- **Segment‑based revenue breakdown:** charts summarizing revenue and average basket size by gender.
 - **Monthly revenue trend:** a line graph showing seasonal fluctuations across the year.
 - **Product category comparison:** a bar chart ranking Beauty, Clothing and Electronics by total revenue and average revenue per transaction.
 
-> A live dashboard will be created after the analytical work is finalised, using Python visualisations as a foundation.
+> A live dashboard will be created after the analytical work is finalised, using Tableau as a foundation.
 
 ---
 
 ## Actionable Recommendations
 
-- **Target high‑value customer segments.** Female customers generated slightly higher total revenue and purchased marginally more items per transaction than males. Tailored promotions (e.g., bundle offers or loyalty perks) could increase their lifetime value.
-- **Prioritise beauty products.** Beauty products delivered the highest total revenue and the highest average ticket value. Ensure adequate stock levels, highlight premium SKUs and consider bundling related items to maximise profitability.
-- **Align marketing with seasonal peaks.** May 2023 produced the largest revenue spike, while March and September were slower months. Plan promotional campaigns and staffing schedules around these peaks and troughs to optimise resources.
+- **Target high‑value customer segments.** Female customers generated slightly higher total revenue and purchased marginally more items per transaction than males. Tailored promotions (e.g., bundle offers or loyalty perks) could increase their lifetime value. 
+- **Prioritise beauty products.** Beauty products delivered the highest total revenue and the highest average ticket value. Ensure adequate stock levels, highlight premium SKUs and consider bundling related items to maximise profitability. 
+- **Align marketing with seasonal peaks.** May 2023 produced the largest revenue spike, while March and September were slower months. Plan promotional campaigns and staffing schedules around these peaks and throughs to optimize resources.
 - **Nurture high‑value transactions.** Several customers made large purchases (US $2,000). Identifying and rewarding these customers through VIP programmes or personalised outreach could enhance retention and encourage repeat purchases.
 
 ---
@@ -39,7 +39,7 @@ The planned dashboard (to be built after finalising the analysis) will include:
 
 ### Dataset Overview
 
-The dataset analysed in this project originates from Gigasheet’s sample data gallery. According to the provider, the table contains **1,000 rows and 10 columns** with fields such as transaction ID, date, customer information, product category, quantity and price. These columns allow computation of revenue (quantity × price), basket size (number of items) and derived temporal dimensions (month, quarter). The data spans transactions between January 2023 and January 2024.
+The dataset analyzed in this project originates from Gigasheet’s sample data gallery. According to the provider, the table contains **1,000 rows and 10 columns** with fields such as transaction ID, date, customer information, product category, quantity and price. These columns allow computation of revenue (quantity × price), basket size (number of items) and derived temporal dimensions (month, quarter). The data spans transactions between January 2023 and January 2024.
 
 ### Analytical Steps
 
@@ -66,7 +66,7 @@ This repository includes scripts to clean the raw data and to reproduce the anal
 ### SQL transformation and analysis
 
 - **`clean_retail_sales.sql`** – SQL query that applies the same cleaning logic within a database (renaming columns and computing derived fields).
-- **`create_clean_retail_sales_table.sql`** – defines the schema for a cleaned retail sales table to store the transformed data.
+- **`create_retail_sales_table.sql`** – defines the schema for a cleaned retail sales table to store the transformed data.
 - **`q1_segment_revenue.sql`** – returns gender‑based revenue and basket size metrics.
 - **`q2_timing_patterns.sql`** – sums revenue by month to analyse timing/frequency patterns.
 - **`q3_top_products.sql`** – ranks product categories by revenue and average unit price.
@@ -91,7 +91,7 @@ retail-sales-insights/
 ├── data_analysis.py                        # legacy all‑in‑one analysis script
 ├── sql/
 │   ├── clean_retail_sales.sql              # SQL transformation of the raw data
-│   ├── create_clean_retail_sales_table.sql # SQL DDL for the cleaned table
+│   ├── create_retail_sales_table.sql       # SQL DDL for the cleaned table
 │   ├── q1_segment_revenue.sql              # SQL analysis for question 1
 │   ├── q2_timing_patterns.sql              # SQL analysis for question 2
 │   └── q3_top_products.sql                 # SQL analysis for question 3
@@ -104,7 +104,7 @@ retail-sales-insights/
 
 ## Tools Used
 
-- **Python (pandas, seaborn, matplotlib):** for data import, aggregation and visualisation.
+- **Python (pandas, seaborn, matplotlib):** for data import, aggregation and visualization.
 - **SQL (MySQL):** used to reproduce core insights with joins, groupings, and date filters.
 - **Jupyter Notebook / Tableau:** for exploration and dashboard prototyping.
 
@@ -121,4 +121,5 @@ retail-sales-insights/
 
 ## About the Analyst
 
-Jeremy Gutierrez – Data Analyst focused on turning raw data into actionable insights and communicating findings clearly. Connect via LinkedIn or GitHub.
+Jeremy Gutierrez – Data Analyst focused on turning raw data into actionable insights and communicating findings clearly. 
+Let’s connect: [LinkedIn](https://www.linkedin.com/in/jeremy-gutierrez-4502391bb/) | [GitHub](https://github.com/JZambrana1612) 
