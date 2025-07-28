@@ -84,11 +84,13 @@ retail-sales-insights/
 ├── data/
 │   ├── retail_sales_full_dataset.csv       # raw dataset (1 000 rows × 9 columns)
 │   └── retail_sales_clean.csv              # cleaned dataset with derived fields
-├── clean_retail_data.py                    # Python script to clean the raw data
-├── q1_revenue_by_gender.py                 # Python analysis for question 1
-├── q2_monthly_revenue.py                   # Python analysis for question 2
-├── q3_product_performance.py               # Python analysis for question 3
-├── data_analysis.py                        # legacy all‑in‑one analysis script
+├── python/
+│   ├── clean_retail_data.py                # Python script to clean the raw data
+│   ├── q1_revenue_by_gender.py             # Python analysis for question 1
+│   ├── q1_revenue_by_gender.py             # Python analysis for question 1
+│   ├── q2_monthly_revenue.py               # Python analysis for question 2
+│   ├── q3_product_performance.py           # Python analysis for question 3
+│   └── data_analysis.py                    # legacy all‑in‑one analysis script
 ├── sql/
 │   ├── clean_retail_sales.sql              # SQL transformation of the raw data
 │   ├── create_retail_sales_table.sql       # SQL DDL for the cleaned table
