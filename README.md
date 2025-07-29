@@ -100,7 +100,6 @@ retail-sales-insights/
 │   ├── q1_segment_revenue.sql              # SQL analysis for question 1
 │   ├── q2_timing_patterns.sql              # SQL analysis for question 2
 │   └── q3_top_products.sql                 # SQL analysis for question 3
-├── images/                                 # charts and dashboard previews
 ├── README.md                               # project overview and documentation
 └── LICENSE
 ```
