@@ -85,6 +85,8 @@ retail-sales-insights/
 ├── data/
 │   ├── retail_sales_full_dataset.csv       # raw dataset (1 000 rows × 9 columns)
 │   └── retail_sales_clean.csv              # cleaned dataset with derived fields
+├── images/
+│   └── dashboard_preview.png               # Preview of Tableau Dashboard
 ├── python/
 │   ├── clean_retail_data.py                # Python script to clean the raw data
 │   ├── q1_revenue_by_gender.py             # Python analysis for question 1
