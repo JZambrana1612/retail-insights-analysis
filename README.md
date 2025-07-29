@@ -22,8 +22,9 @@ The planned dashboard (to be built after finalising the analysis) will include:
 - **Monthly revenue trend:** a line graph showing seasonal fluctuations across the year.
 - **Product category comparison:** a bar chart ranking Beauty, Clothing and Electronics by total revenue and average revenue per transaction.
 
-> A live dashboard will be created after the analytical work is finalised, using Tableau as a foundation.
+> 🔗 [View the live dashboard on Tableau Public](https://public.tableau.com/views/RetailSalesInsights_17537521330210/RetailSalesInsights?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) 
 
+![Dashboard Preview](images/dashboard_preview.png)
 ---
 
 ## Actionable Recommendations
